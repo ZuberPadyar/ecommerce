@@ -27,9 +27,9 @@ export default function Navbar() {
         
         <ul className='flex flex-col gap-5 pl-2 w-[12rem]'>
             <Link to="/" className='flex items-center gap-3 h-10 w-full hover:bg-white rounded-xl ease-in duration-[300ms]'><span className='text-[2rem]'><AiFillHome /></span>home</Link>
-            <li className='flex items-center gap-3 h-10 w-[10rem] after:absolute after:text-sm hover:bg-white rounded-xl ease-in duration-[300ms] transition'><span className='text-[2rem]'><FaHospitalUser /></span>about</li>
-            <li className='flex items-center gap-3 h-10 w-full hover:bg-white rounded-xl ease-in duration-[300ms]'><span className='text-[2rem]'><MdPermContactCalendar /></span>contact us</li>
-            <li className='flex items-center gap-3 h-10 w-full hover:bg-white rounded-xl ease-in duration-[300ms]'><span className='text-[2rem]'><FaProductHunt /></span>other product</li>
+            <Link to="/about" className='flex items-center gap-3 h-10 w-[10rem] after:absolute after:text-sm hover:bg-white rounded-xl ease-in duration-[300ms] transition'><span className='text-[2rem]'><FaHospitalUser /></span>about</Link>
+            <Link to="/contact" className='flex items-center gap-3 h-10 w-full hover:bg-white rounded-xl ease-in duration-[300ms]'><span className='text-[2rem]'><MdPermContactCalendar /></span>contact us</Link>
+            <Link to="/otherproduct" className='flex items-center gap-3 h-10 w-full hover:bg-white rounded-xl ease-in duration-[300ms]'><span className='text-[2rem]'><FaProductHunt /></span>other product</Link>
             <Link to="/cart" className='flex items-center gap-3 h-10 w-full hover:bg-white rounded-xl ease-in duration-[300ms]'><span className='text-[2rem]'><BsCartFill /></span>cart</Link>
             
         </ul>
