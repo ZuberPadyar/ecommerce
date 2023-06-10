@@ -71,11 +71,11 @@ export default function Home() {
   return (
     <div className="absolute left-10 md:left-[160px] flex flex-wrap justify-[inerhit] w-[full-10rem] overflow-x-hidden h-auto ">
       {images.map((image) => (
-        <div key={image.id} className='pl-6 md:pl-18 h-auto w-full basis-[25%] capitalize my-7 hover:scale-110 transition-all duration-500 ease-out'>
-          <img src={image.img} alt={image.name} className='h-36 md:h-48 w-32 md:w-48 rounded-2xl hover:opacity-80' />
+        <div key={image.id} className='pl-6 md:pl-18 h-auto w-full basis-[25%] capitalize my-7 hover:opacity-90 rounded-3xl hover:scale-110 transition-all ease-in-out duration-500 shadow-2xl m-10 py-5'>
+          <img src={image.img} alt={image.name} className='h-36 md:h-48 w-32 md:w-48 rounded-2xl ' />
           <h4 className='my-2'>{image.name}</h4>
           <p className='my-1'>Price: ${image.price}</p>
-          <button className='bg-slate-600 w-32 md:w-48 rounded-xl h-10 text-white hover:bg-slate-800 capitalize' onClick={() => addtocart(image)}>add to cart</button>
+          <button className='bg-slate-600 w-32 md:w-48 rounded-xl h-10 text-white hover:bg-slate-700 capitalize' onClick={() => addtocart(image)}>add to cart</button>
         </div>
       ))}
     </div>

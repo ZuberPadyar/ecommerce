@@ -7,15 +7,19 @@ import Cart from './components/Cart';
 import { useState } from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
+import { motion } from 'framer-motion';
 // import Otherproduct from './components/Otherproduct';
 
 
 function App() {
+
+  
   const [Card, setCard] = useState([]); 
 
   return (
     <div className="App">
       <BrowserRouter>
+
         <Cardcontext.Provider value={{ Card, setCard }}>
           <Navbar />
           <Routes>
